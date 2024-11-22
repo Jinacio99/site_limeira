@@ -169,6 +169,72 @@ body {
 
  /* cidade */
 
+video {
+    width: 100%;
+
+}
+
+iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+.imagem-galeria img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.links-relevantes{
+    margin-left: 600px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h2,
+h3 {
+    font-size: 1.8rem;
+}
+
+
+
+
+/* Distância */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Bairro */
 /* Estilo para vídeos */
 video {
     width: 100%;
@@ -245,96 +311,6 @@ h3 {
     }
 }
 
-
-
-/* Distância */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #ffffff;
-}
-
-table,
-th,
-td {
-    border: 1px solid #ddd;
-}
-
-th,
-td {
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #f4f4f4;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-
-/* Bairro */
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    text-align: center;
-    color:#333;
-}
-
-/* Estilo do contêiner principal */
-.tb3 {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza as listas */
-    margin-top: 20px;
-}
-
-/* Estilo das divisões */
-.t1, .t2 {
-    flex: 1; /* Faz com que ambas ocupem espaço igual */
-    min-width: 300px; /* Define um limite mínimo para a largura */
-    max-width: 400px; /* Define um limite máximo para a largura */
-}
-
-/* Estilo das listas */
-.tb {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Evita bordas arredondadas cortadas */
-}
-
-.tb li {
-    padding: 10px 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.tb li:last-child {
-    border-bottom: none; /* Remove a borda do último item */
-}
-
-.tb li:hover {
-    background-color: #f0f0f0; /* Realça os itens ao passar o mouse */
-    cursor: pointer;
-}
 /* pontos turisticos  */
 
 .ponto-turistico {
