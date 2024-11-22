@@ -168,33 +168,73 @@ body {
 }
 
  /* cidade */
-
+/* Estilo para vídeos */
 video {
     width: 100%;
-
+    max-height: 60vh; /* Limita a altura para evitar distorção em telas menores */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destacar o vídeo */
 }
 
+/* Estilo para iFrames */
 iframe {
     width: 100%;
     height: 60vh;
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destaque */
 }
 
+/* Estilo para imagens da galeria */
 .imagem-galeria img {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.links-relevantes{
-    margin-left: 600px;
+    margin: 20px 0; /* Combina margens superior e inferior */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves ao passar o mouse */
 }
 
-p {
-    font-size: 1.2rem;
+/* Efeito ao passar o mouse nas imagens */
+.imagem-galeria img:hover {
+    transform: scale(1.05); /* Amplia levemente a imagem */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realça a sombra */
 }
 
+/* Links relevantes */
+.links-relevantes {
+    margin-left: auto; /* Centraliza os links na tela */
+    margin-right: auto;
+    max-width: 600px; /* Limita a largura para alinhamento em telas maiores */
+    text-align: center; /* Centraliza o texto dos links */
+}
+
+
+/* Estilo para cabeçalhos */
 h2,
 h3 {
     font-size: 1.8rem;
+    margin-bottom: 16px; /* Espaçamento inferior consistente */
+    color: #2c3e50; /* Tom azul escuro para contraste */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .links-relevantes {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        height: 40vh; /* Reduz a altura do iFrame em telas menores */
+    }
 }
 
 
