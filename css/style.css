@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+* {
+    margin: 0px;
+    /*Eliminar margens externas*/
+    padding: 0px;
+    /*Eliminar margens internas*/
+    box-sizing: border-box;
+    /*Usar Tamanos reais*/
+
+}
+
+:root {
+    font-family: Roboto;
+}
+
+nav,
+article,
+main,
+footer {
+    width: 1250px;
+    margin: 0px auto;
+
+    /*Centralizar o site*/
+}
+
+.destaques div {
+    border: 2px solid black;
+}
+
+/* CABEÇALHO*/
+header {
+    background-color: #5aaf94;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+nav {
+    display: flex;
+    /*muda  de bloco para flex*/
+    justify-content: space-between;
+    /* distribui horizontalmente os filhos*/
+    align-items: center;
+    /*alinha verticalmente */
+}
+
+nav a {
+    color: black;
+    /*Cor do texto*/
+    text-decoration: none;
+    /* Retira o undeline "Sublinhado" */
+    text-transform: uppercase;
+    /*texto  em caixa alta*/
+    font-size: .9rem;
+    /*diminui o tamanho da letra */
+    font-weight: bold;
+    /* carga ou espessura "negrito"*/
+    padding: 0px 10px;
+}
+
+nav a:hover {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav img {
+    border-radius: 8px;
+    /*arredonda os cantos*/
+    width: 128px;
+    height: 128px;
+
+}
+
+footer {
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.imagem-principal {
+    width: 100%;
+    /* A imagem ocupa toda a largura do seu contêiner */
+    max-width: 800px;
+    /* Tamanho máximo da imagem */
+    margin: 20px 0;
+    /* Espaço acima e abaixo da imagem */
+    display: block;
+    /* Garante que a imagem fique em bloco, ocupando a largura disponível */
+    margin-left: auto;
+    /* Centraliza a imagem horizontalmente */
+    margin-right: auto;
+    /* Centraliza a imagem horizontalmente */
+    border-radius: 8px;
+    /* Bordas arredondadas, se desejar */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('../imagens/fundo.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
+    background-position: center; /* Centraliza a imagem no fundo */
+    color: #333; /* Garante que o texto seja legível */}
+
+
+
+
+
+/* Home  */
+
+
+.imagem_destaque img {
+    width: 100%;
+}
+
+
+
+
+
+
+.destaques {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+
+    .card {
+        width: 32%;
+        border: 1px solid #ddd;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(255, 18, 129, 0.1);
+
+
+        img {
+            width: 100%;
+            border-radius: 6px 6px 0px 0px;
+            /*top-left top-right bottom left bottom right*/
+        }
+
+        p {
+            font-weight: 300;
+            /* font-weight usa carga  que vai de 100 a 900*/
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        a {
+            color: var(--cinza_escuro);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+    }
+}
+
+ /* cidade */
+
+/* Estilo para vídeos */
+video {
+    width: 100%;
+    max-height: 60vh; /* Limita a altura para evitar distorção em telas menores */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destacar o vídeo */
+}
+
+/* Estilo para iFrames */
+iframe {
+    width: 100%;
+    height: 60vh;
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destaque */
+}
+
+/* Estilo para imagens da galeria */
+.imagem-galeria img {
+    width: 100%;
+    margin: 20px 0; /* Combina margens superior e inferior */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.imagem-galeria img:hover {
+    transform: scale(1.05); /* Amplia levemente a imagem */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realça a sombra */
+}
+
+/* Links relevantes */
+.links-relevantes {
+    margin-left: auto; /* Centraliza os links na tela */
+    margin-right: auto;
+    max-width: 600px; /* Limita a largura para alinhamento em telas maiores */
+    text-align: center; /* Centraliza o texto dos links */
+}
+
+/* Estilo para parágrafos */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    margin-bottom: 16px; /* Adiciona espaçamento entre parágrafos */
+    color: #333; /* Cor padrão do texto */
+}
+
+/* Estilo para cabeçalhos */
+h2,
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 16px; /* Espaçamento inferior consistente */
+    color: #2c3e50; /* Tom azul escuro para contraste */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .links-relevantes {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        height: 40vh; /* Reduz a altura do iFrame em telas menores */
+    }
+}
+
+
+
+/* Distância */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Bairro */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color:#333;
+}
+
+/* Estilo do contêiner principal */
+.tb3 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as listas */
+    margin-top: 20px;
+}
+
+/* Estilo das divisões */
+.t1, .t2 {
+    flex: 1; /* Faz com que ambas ocupem espaço igual */
+    min-width: 300px; /* Define um limite mínimo para a largura */
+    max-width: 400px; /* Define um limite máximo para a largura */
+}
+
+/* Estilo das listas */
+.tb {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita bordas arredondadas cortadas */
+}
+
+.tb li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tb li:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+}
+
+.tb li:hover {
+    background-color: #f0f0f0; /* Realça os itens ao passar o mouse */
+    cursor: pointer;
+}
+/* pontos turisticos  */
+
+.ponto-turistico {
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.ponto-turistico h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ponto-turistico img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
