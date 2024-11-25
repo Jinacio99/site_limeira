@@ -1,63 +1,57 @@
+/* Importações de fontes e ícones */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-
+/* Reset básico */
 * {
-    margin: 0px;
-    /*Eliminar margens externas*/
-    padding: 0px;
-    /*Eliminar margens internas*/
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    /*Usar Tamanos reais*/
-
 }
 
 :root {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
-nav,
-article,
-main,
-footer {
+/* Estrutura geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('../imagens/fundo.jpg'); /* Caminho correto para a imagem de fundo */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+/* Containers gerais */
+nav, article, main, footer {
     width: 1250px;
-    margin: 0px auto;
-
-    /*Centralizar o site*/
+    margin: 0 auto; /* Centraliza o site */
 }
 
-.destaques div {
-    border: 2px solid black;
-}
-
-/* CABEÇALHO*/
+/* Estilo do Cabeçalho */
 header {
     background-color: #5aaf94;
     color: #fff;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 nav {
     display: flex;
-    /*muda  de bloco para flex*/
     justify-content: space-between;
-    /* distribui horizontalmente os filhos*/
     align-items: center;
-    /*alinha verticalmente */
 }
 
 nav a {
     color: black;
-    /*Cor do texto*/
     text-decoration: none;
-    /* Retira o undeline "Sublinhado" */
     text-transform: uppercase;
-    /*texto  em caixa alta*/
-    font-size: .9rem;
-    /*diminui o tamanho da letra */
+    font-size: 0.9rem;
     font-weight: bold;
-    /* carga ou espessura "negrito"*/
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 nav a:hover {
@@ -68,181 +62,106 @@ nav a:hover {
 
 nav img {
     border-radius: 8px;
-    /*arredonda os cantos*/
     width: 128px;
     height: 128px;
-
 }
 
+/* Imagem principal */
+.imagem-principal {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Estilo do Rodapé */
 footer {
     background-color: aquamarine;
     color: black;
     text-align: center;
     padding: 10px;
     width: 100%;
+    position: relative;
     bottom: 0;
 }
 
-.imagem-principal {
-    width: 100%;
-    /* A imagem ocupa toda a largura do seu contêiner */
-    max-width: 800px;
-    /* Tamanho máximo da imagem */
-    margin: 20px 0;
-    /* Espaço acima e abaixo da imagem */
-    display: block;
-    /* Garante que a imagem fique em bloco, ocupando a largura disponível */
-    margin-left: auto;
-    /* Centraliza a imagem horizontalmente */
-    margin-right: auto;
-    /* Centraliza a imagem horizontalmente */
-    border-radius: 8px;
-    /* Bordas arredondadas, se desejar */
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-image: url('../imagens/fundo.jpg'); /* Substitua pelo caminho correto da sua imagem */
-    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
-    background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
-    background-position: center; /* Centraliza a imagem no fundo */
-    color: #333; /* Garante que o texto seja legível */}
-
-
-
-
-
-/* Home  */
-
-
+/* Página Home */
 .imagem_destaque img {
     width: 100%;
 }
-
-
-
-
-
 
 .destaques {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
-    
-
-    .card {
-        width: 32%;
-        border: 1px solid #ddd;
-        margin-bottom: 30px;
-        text-align: center;
-        border-radius: 8px;
-        box-shadow: 2px 2px 5px rgba(255, 18, 129, 0.1);
-
-
-        img {
-            width: 100%;
-            border-radius: 6px 6px 0px 0px;
-            /*top-left top-right bottom left bottom right*/
-        }
-
-        p {
-            font-weight: 300;
-            /* font-weight usa carga  que vai de 100 a 900*/
-            margin-left: 10px;
-            margin-right: 10px;
-
-        }
-
-        a {
-            color: var(--cinza_escuro);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: red;
-        }
-    }
 }
 
- /* cidade */
+.destaques .card {
+    width: 32%;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(255, 18, 129, 0.1);
+}
 
-
-
-/* Estilo para iFrames */
-.video-embed iframe{
+.destaques .card img {
     width: 100%;
-     border: none; /* Remove bordas padrão */
-    border-radius: 8px; /* Adiciona bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destaque */
+    border-radius: 6px 6px 0 0;
 }
 
+.destaques .card p {
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+.destaques .card a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.destaques .card a:hover {
+    color: red;
+}
+
+/* Página Cidade */
 .video-embed {
-    width: 1250px;
-    height: 600p;
+    width: 860px;
+    height: 600px;
 }
 
-/* Estilo para imagens da galeria */
+.video-embed iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .imagem-galeria img {
     width: 100%;
-    margin: 20px 0; /* Combina margens superior e inferior */
-    border-radius: 8px; /* Adiciona bordas arredondadas */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves ao passar o mouse */
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito ao passar o mouse nas imagens */
 .imagem-galeria img:hover {
-    transform: scale(1.05); /* Amplia levemente a imagem */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realça a sombra */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Links relevantes */
 .links-relevantes {
-    margin-left: auto; /* Centraliza os links na tela */
-    margin-right: auto;
-    max-width: 600px; /* Limita a largura para alinhamento em telas maiores */
-    h3{
+    margin: 20px auto;
+    max-width: 600px;
+   
+    ul{
+        list-style-type: none;
         text-align: center;
     }
 }
 
-
-/* Estilo para cabeçalhos */
-h2,
-h3 {
-    font-size: 1.8rem;
-    margin-bottom: 16px; /* Espaçamento inferior consistente */
-    color: #2c3e50; /* Tom azul escuro para contraste */
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .links-relevantes {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    h2,
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    iframe {
-        height: 40vh; /* Reduz a altura do iFrame em telas menores */
-    }
-}
-
-
-
-
-/* Distância */
-
+/* Página Distância */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -250,14 +169,11 @@ table {
     background-color: #ffffff;
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 1px solid #ddd;
 }
 
-th,
-td {
+th, td {
     padding: 10px;
     text-align: center;
 }
@@ -274,37 +190,15 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-
-/* Bairro */
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    text-align: center;
-    color:#333;
-}
-
-/* Estilo do contêiner principal */
+/* Página Bairro */
 .tb3 {
-    display: flex;
+    width: 50%;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as listas */
+    justify-content: center;
     margin-top: 20px;
 }
 
-/* Estilo das divisões */
-.t1, .t2 {
-    flex: 1; /* Faz com que ambas ocupem espaço igual */
-    min-width: 300px; /* Define um limite mínimo para a largura */
-    max-width: 400px; /* Define um limite máximo para a largura */
-}
-
-/* Estilo das listas */
 .tb {
     list-style-type: none;
     padding: 0;
@@ -313,7 +207,6 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Evita bordas arredondadas cortadas */
 }
 
 .tb li {
@@ -322,22 +215,24 @@ h1 {
     text-align: center;
 }
 
-.tb li:last-child {
-    border-bottom: none; /* Remove a borda do último item */
-}
-
 .tb li:hover {
-    background-color: #f0f0f0; /* Realça os itens ao passar o mouse */
+    background-color: #f0f0f0;
     cursor: pointer;
 }
-/* pontos turisticos  */
 
+/* Página Pontos Turísticos */
 .ponto-turistico {
     margin-bottom: 40px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    iframe{
+        width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+    }
 }
 
 .ponto-turistico h2 {
@@ -352,3 +247,91 @@ h1 {
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
+/* Página População */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.pt{
+    text-align: center ;
+    list-style-type: none;
+}
+.dados p {
+    text-align: center;
+}
+main h1, main h2 {
+    color: #040f1b;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #d6dfe7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .links-relevantes, .tb3 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    iframe {
+        height: 100vh;
+    }
+}
+
+/*População*/
+
+
+
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.map {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+        }
+    

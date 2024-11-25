@@ -4,25 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>esportes</title>
+    <title>Esportes</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .video {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 225px;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="imagens/DALL·E 2024-11-06 14.47.52 - A logo design featuring sugarcane stalks with a dirt bike in the center, in a stylized and modern logo style. The sugarcane stalks should frame the di.webp" alt="">
+            <img src="imagens/DALL·E 2024-11-06 14.47.52 - A logo design featuring sugarcane stalks with a dirt bike in the center, in a stylized and modern logo style. The sugarcane stalks should frame the di.webp" alt="Logo">
             <span>
                 <a href="index.html">Home</a>
                 <a href="Cidade.html">Cidade</a>
-                <a href="Distancia.html">Distancia</a>
+                <a href="Distancia.html">Distância</a>
                 <a href="Bairro.html">Bairro</a>
-                <a href="localização.html">localização</a>
-                <a href="população.html">população</a>
-                <a href="ponto_turisticos.html">ponto turisticos</a>
-                <a href="esportes.html">esportes</a>
-                <a href="lista_de_prefeitos.html">lista de prefeitos</a>
-                
+                <a href="localização.html">Localização</a>
+                <a href="população.html">População</a>
+                <a href="ponto_turisticos.html">Ponto Turísticos</a>
+                <a href="esportes.html">Esportes</a>
+                <a href="lista_de_prefeitos.html">Lista de Prefeitos</a>
             </span>
         </nav>
     </header>
@@ -30,11 +68,45 @@
         <img src="imagens/7.png" alt="Paisagem">
     </section>
     <main>
+        <h1>Esportes em Limeira</h1>
+        <div class="video-container">
+            <!-- Vídeo 1 -->
+            <div class="video">
+                <iframe 
+                    src="https://www.youtube.com/embed/OAZw__U1dsw?si=YUQ52ZcVYUmhANVq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    title="Vídeo Esportivo 1" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p style="text-align:center; margin-top: 10px;">Futebol Amador em Limeira</p>
+            </div>
 
+            <!-- Vídeo 2 -->
+            <div class="video">
+                <iframe 
+                    src="https://www.youtube.com/embed/Th3Bq4l12dM?si=EVb8gULxIcZeAARK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    title="Vídeo Esportivo 2" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p style="text-align:center; margin-top: 10px;">Ciclismo e Trilhas</p>
+            </div>
+
+            <!-- Vídeo 3 -->
+            <div class="video">
+                <iframe 
+                    src="https://www.youtube.com/embed/Um-rzoKiPMo?si=EFFrQRgHab4ljNiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    title="Vídeo Esportivo 3" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p style="text-align:center; margin-top: 10px;">Artes Marciais na Região</p>
+            </div>
+        </div>
     </main>
-   <footer>
-     <div>
-            &copy; 2024 | Todos os direitos reservados | Creditos
+    <footer>
+        <div>
+            &copy; 2024 | Todos os direitos reservados | Créditos
         </div>
         <div>
             <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -42,9 +114,7 @@
             <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
-   </footer> 
+    </footer>
 </body>
-
-
 
 </html>
