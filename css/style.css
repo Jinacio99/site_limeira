@@ -168,21 +168,20 @@ body {
 }
 
  /* cidade */
-/* Estilo para vídeos */
-video {
-    width: 100%;
-    max-height: 60vh; /* Limita a altura para evitar distorção em telas menores */
-    border-radius: 8px; /* Adiciona bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destacar o vídeo */
-}
+
+
 
 /* Estilo para iFrames */
-iframe {
+.video-embed iframe{
     width: 100%;
-    height: 60vh;
-    border: none; /* Remove bordas padrão */
+     border: none; /* Remove bordas padrão */
     border-radius: 8px; /* Adiciona bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destaque */
+}
+
+.video-embed {
+    width: 1250px;
+    height: 600p;
 }
 
 /* Estilo para imagens da galeria */
@@ -204,7 +203,9 @@ iframe {
     margin-left: auto; /* Centraliza os links na tela */
     margin-right: auto;
     max-width: 600px; /* Limita a largura para alinhamento em telas maiores */
-    text-align: center; /* Centraliza o texto dos links */
+    h3{
+        text-align: center;
+    }
 }
 
 
@@ -318,6 +319,7 @@ h1 {
 .tb li {
     padding: 10px 15px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 .tb li:last-child {
