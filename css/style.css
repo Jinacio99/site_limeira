@@ -127,7 +127,12 @@ footer {
 }
 
 /* Página Cidade */
-.video-embed {
+
+iframe{
+    height: 60vh;
+    width: 100%;
+}
+/* .video-embed {
     width: 860px;
     height: 600px;
 }
@@ -137,7 +142,7 @@ footer {
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .imagem-galeria img {
     width: 100%;
@@ -154,7 +159,7 @@ footer {
 .links-relevantes {
     margin: 20px auto;
     max-width: 600px;
-   
+   .tt{ text-align: center;}
     ul{
         list-style-type: none;
         text-align: center;
@@ -227,7 +232,7 @@ tr:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    iframe{
+    .m2{
         width: 100%;
     border: none;
     border-radius: 8px;
@@ -295,17 +300,6 @@ a:hover {
     color: #0056b3;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .links-relevantes, .tb3 {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    iframe {
-        height: 100vh;
-    }
-}
 
 /*População*/
 
@@ -329,11 +323,11 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-iframe {
+/* iframe {
     width: 100%;
     height: 100%;
     border: none;
-}
+} */
 
 /*Lista de prefeitos limeira */
 .ViToria {
