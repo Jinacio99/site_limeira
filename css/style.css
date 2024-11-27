@@ -333,5 +333,86 @@ iframe {
     width: 100%;
     height: 100%;
     border: none;
-        }
+}
+
+/*Lista de prefeitos limeira */
+.ViToria {
     
+    list-style: none;
+    text-align: center; /* Justifica o texto */
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/*responsividade */
+@media screen and (max-width: 600px) {
+    nav,
+    article,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    nav {
+        display: block; /* Alterar de flex para block */
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+
+    article, main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imagens {
+        display: block;
+        justify-content: space-between;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .home {
+        display: block;
+
+        .card {
+            width: 100%;
+        }
+    }
+
+    .cards_serviços {
+        display: block;
+        height: auto;
+    }
+
+    footer {
+        padding: 0px 10px 10px 10px;
+    }
+
+    .galeria_miniaturas {
+        display: block;
+
+        img {
+            width: 49%;
+        }
+    }
+
+    iframe {
+        height: 30vh;
+    }
+}
+
