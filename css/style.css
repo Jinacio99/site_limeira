@@ -379,14 +379,27 @@ a:hover {
             width: 100%;
         }
     }
+    .destaques .card {
+        width: 100%;
+        border: 1px solid #ddd;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(255, 18, 129, 0.1);
+    }
+   
+    
 
     .home {
         display: block;
 
         .card {
             width: 100%;
+            
         }
     }
+   
+    
 
     .cards_serviços {
         display: block;
@@ -408,5 +421,9 @@ a:hover {
     iframe {
         height: 30vh;
     }
+    .tb3 {
+        width: 100%
+    }
 }
 
+ 
