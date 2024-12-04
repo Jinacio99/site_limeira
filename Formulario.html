@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="imagens/DALL·E 2024-11-06 14.47.52 - A logo design featuring sugarcane stalks with a dirt bike in the center, in a stylized and modern logo style. The sugarcane stalks should frame the di.webp" alt="">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="Cidade.html">Cidade</a>
+                <a href="Distancia.html">Distancia</a>
+                <a href="Bairro.html">Bairro</a>
+                <a href="localização.html">localização</a>
+                <a href="população.html">população</a>
+                <a href="ponto_turisticos.html">ponto turisticos</a>
+                <a href="esportes.html">esportes</a>
+                <a href="lista_de_prefeitos.html">lista de prefeitos</a>
+                <a href="Formulario.html">Formulário</a>
+            </span>
+        </nav>
+    </header>
+    <section class="imagem_destaque">
+        <img src="imagens/LIMEIRA.png" alt="Paisagem">
+    </section>
+    <main>
+        <h1>Envie sua sugestão para a melhoria da cidade de Limeira</h1>
+        <form id="formularioSugestoes" action="processar_sugestao.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <div class="campo-sexo">
+                <label for="">Sexo :</label>
+                <label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">Masculino
+                </label>
+                <label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">Feminino
+                </label>
+                <label>
+                    <input type="radio" id="outro" name="sexo" value="outro">Outro
+                </label>
+            </div>
+            
+        
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            
+            <br>
+        
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" required>
+            <br>
+        
+            <label for="sugestao">Sugestão:</label>
+            <textarea id="sugestao" name="sugestao" minlength="100" required></textarea>
+            <br>
+        
+            <button type="submit">Enviar</button>
+        </form>
+        
+        
+    </main>
+    <footer>
+        <div>
+            &copy; 2024 | Todos os direitos reservados | Limeira SP
+        </div>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="js/enviaFormulario.js"></script>
+</body>
+
+</html>

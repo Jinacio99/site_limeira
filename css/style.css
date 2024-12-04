@@ -425,5 +425,93 @@ a:hover {
         width: 100%
     }
 }
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento uniforme entre os elementos */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
- 
+/* Labels */
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs, Selects e Textareas */
+form input, 
+form select, 
+form textarea {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+}
+
+/* Radio Buttons */
+form input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Botões */
+form button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f8a);
+    transform: scale(1.03);
+}
+
+form button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Textarea */
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Mensagens de Erro (Opcional) */
+form .error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.campo-sexo label {
+    display: flex;
+    align-items: start;
+    gap: 8px; /* Espaço entre o botão e o texto */
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}    
